@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <header>
+        <img class="headerLogo" src="./image/index/logo.jpg" alt="">
+        <img class="headerRight" src="./image/index/xiazai.jpg" alt="">
+        <img class="headerRight" src="./image/index/my.jpg" alt="">
+    </header>
+    <nav>
+        <a href="./index.html">首页</a>&nbsp;>&nbsp;<a href="./person.html">我的</a>&nbsp;>&nbsp;<a href="#">注册</a>
+    </nav>
+
+    <div class="content">
+        <ul class="item">
+            <li>
+                <input type="text" placeholder="请输入手机号码">
+                <button id="code">发送验证码</button>
+            </li>
+            <li>
+                <input type="text" placeholder="请输入短信中的验证码">
+            </li>
+            <li>
+                <input type="password" placeholder="请输入新密码">
+            </li>
+            <li class="btn">
+                <button>立即注册</button>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
+
+<script src="./js/setRem.js"></script>
+<script>
+    let index = 60;
+    let code = document.getElementById('code');
+    let timer;
+    code.onclick = () => {
+        clearInterval(timer);
+        timer = setInterval(() => {
+            index--;
+            let str = `(${index}秒)重发`
+            code.innerHTML = str;
+
+            if (index <= 0) {
+                index = 60;
+                clearInterval(timer);
+                code.innerHTML = '发送验证码';
+            }
+        }, 1000);
+    }
+</script>

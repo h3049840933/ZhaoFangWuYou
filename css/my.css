@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #f5f5f5;
+}
+header {
+  width: 100%;
+  background-color: #ff8a00;
+  height: 5rem;
+}
+header .headerLogo {
+  float: left;
+  height: 4rem;
+  width: auto;
+  margin-top: 0.5rem;
+  margin-left: 3rem;
+}
+header .headerRight {
+  float: right;
+  height: 3rem;
+  width: auto;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+header > .headerRight:nth-of-type(2) {
+  margin-right: 3.5rem;
+}
+nav {
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  border-bottom: 1px solid #cfcfcf;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  background-color: #fff;
+}
+nav a {
+  color: #555;
+}
+nav > a:nth-of-type(1) {
+  color: #333;
+  font-weight: 600;
+}
+.banner {
+  width: 100%;
+  height: 16.4rem;
+  background: url(../image/my/bg2.png) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .login {
+  text-align: center;
+}
+.banner .login img {
+  width: 6rem;
+  margin-bottom: 2rem;
+}
+.banner .login p {
+  color: #fff;
+}
+.list {
+  width: 100%;
+  margin-top: 1.5rem;
+  background-color: #fff;
+}
+.list li {
+  width: 90%;
+  height: 5rem;
+  margin: auto;
+  border-bottom: 1px solid #e1e1e1;
+  overflow: hidden;
+}
+.list li .box {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  margin-top: 1rem;
+}
+.list li .box img {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  float: left;
+}
+.list li .box span {
+  line-height: 3rem;
+  float: left;
+  height: 3rem;
+  margin-left: 0.5rem;
+  color: #555;
+}
+.list li .box .right {
+  float: right;
+  width: 0.7rem;
+  height: 1.5rem;
+  background: url(../image/my/right.png) no-repeat;
+  background-size: 100% 100%;
+  margin-top: 0.8rem;
+}
+.list > li:last-of-type {
+  border: none;
+}
+.btn {
+  display: block;
+  width: 30rem;
+  height: 3.8rem;
+  background-color: #fff;
+  color: #ff8a00;
+  border: 1px solid #dcdcdc;
+  margin: 3rem auto;
+}
